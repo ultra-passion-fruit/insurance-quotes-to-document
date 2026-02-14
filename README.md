@@ -10,6 +10,7 @@ This program produces a travel quotes PowerPoint with the contents tailored to t
 
 ### How to run
 1. Download all the contents from the repository into a folder on your computer
-2. Double-click the .command file to run
+2. Download the .csv file with the client information and put into the running folder
+3. Double-click the .command file to run
 
-The the PowerPoint will be created in a new folder.
+The the quotes PowerPoint will be created in a new folder.

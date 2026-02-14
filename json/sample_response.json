@@ -1,0 +1,298 @@
+{
+  "partnerCode":"ENE000",
+  "productLineCode":"PR-FDM-1",
+  "tripType":"SINGLE",
+  "insuredType":"CANADIAN",
+  "destinationType":"DESTWW",
+  "coverageType":"MED",
+  "travelDirectionType":"OUTBOUND",
+  "trip":{
+    "startDate":"2026-02-01",
+    "endDate":"2026-02-08",
+    "departureProvince":"ON",
+    "reservation":"",
+    "destination":"CN",
+    "cost":200,
+    "bookingDate":"2026-01-10",
+    "arrivalDate":"2026-02-01"
+  },
+  "insuredPersons":[
+    {
+      "firstName":"Joe",
+      "middleName":"",
+      "lastName":"Bob",
+      "prefixName":"",
+      "gender":"MALE",
+      "birthDate":"2000-01-01",
+      "age":20,
+      "language":"",
+      "phoneNumbers":[
+
+      ],
+      "addresses":[
+
+      ],
+      "emails":[
+
+      ],
+      "insuredType":"CANADIAN",
+      "insuredGroupType":"INDIVIDUAL",
+      "inHomeProvince":false,
+      "homeProvince":"",
+      "beneficiaryFullName":"",
+      "selectedPlans":[
+
+      ],
+      "questionnaires":[
+
+      ],
+      "plansToPrice":[
+
+      ]
+    }
+  ]
+}
+
+Date: Mon, 05 Jan 2026 15:42:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Mashery-Responder: prod-j-worker-03-036f7bbf1fd22857b.usw2.mashery.com
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Server: Mashery Proxy
+
+{
+    "action": "INITIAL_SALES",
+    "availablePlanPrices": [
+        {
+        "planCode": "PL-SMED-3",
+        "genericName": "Emergency Medical Worldwide",
+        "productCode": "PR-FDM-1",
+        "effectiveDate": "2026-02-01",
+        "expiryDate": "2026-02-08",
+        "isExtension": false,
+        "minimumApplied": false,
+        "hasPriceOverridden": false,
+        "ratedPrice": {
+            "type": "DEBIT",
+            "currencyCode": "CAD",
+            "total": 30.48,
+            "comm": 0.00,
+            "commPct": 0.00,
+            "net": 0.00
+        },
+        "chargedPrice": {
+            "type": "DEBIT",
+            "currencyCode": "CAD",
+            "total": 30.48,
+            "comm": 0.00,
+            "commPct": 0.00,
+            "net": 0.00
+        },
+        "priceInputParameters": [
+            {
+            "code": "PM-SPORT12",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-GROUP-1",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT10",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT-3",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-TOP-1",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT14",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT22",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT-5",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT16",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT20",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT-1",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT-9",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT21",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT13",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT-8",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-DED-28",
+            "value": 300,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT19",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT18",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT11",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT17",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT-4",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT-6",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }, {
+            "code": "PM-SPORT-2",
+            "value": null,
+            "grossPremium": null,
+            "overriddenPrice": null
+        }],
+        "priceBreakdown": {
+            "planCode": "PL-SMED-3",
+            "planName": "Traveller - Medical Worldwide - Single Trip (SW)",
+            "planType": "SINGLE",
+            "basePlanInfo": {
+                "primaryCoverage": "MED",
+                "destination": "DESTWW"
+            },
+            "personId": "WS-PERSON-1767627753112-34",
+            "premium": 30.48,
+            "tax": 0.00,
+            "planCost": 30.48,
+            "baseRatePriceItem": {
+                "code": "TMWSTV-TMWSTVF4",
+                "name": "Traveller - Medical Worldwide - Single Trip, v17 2024-02",
+                "inputClass": "RATE",
+                "amount": 30.48
+            },
+            "priceItems": [{
+                "code": "AGE",
+                "name": "Age [0, 41, 56, 57, 58, 59, 60...78. 79, 80, 85, 90]",
+                "type": "AGE",
+                "inputClass": "FACTOR",
+                "value": 26
+            }, 
+            {
+                "code": "FAM",
+                "name": "Grouping (Rate)",
+                "type": "FAM",
+                "inputClass": "FACTOR",
+                "value": 0
+            },
+            {
+                "code": "MINIMUM",
+                "name": "Minimum",
+                "inputClass": "MINIMUM"
+            }, 
+            {
+                "code": "PM-DED-28",
+                "name": "TRAV-GEN-Deductible [0, 300, 500...] $300 default USD V.2",
+                "type": "DED",
+                "subType": "POS",
+                "inputClass": "MODIFIER",
+                "value": 300,
+                "amount": 0.00,
+                "currency": "USD"
+            }, 
+            {
+                "code": "REGI",
+                "name": "Region",
+                "type": "REGI",
+                "inputClass": "FACTOR",
+                "value": 3
+            }, {
+                "code": "TMWSTV-TMWSTVF4",
+                "name": "Traveller - Medical Worldwide - Single Trip, v17 2024-02",
+                "inputClass": "RATE",
+                "amount": 30.48
+            }, {
+                "code": "TRIP",
+                "name": "Trip Length Range [1, 66, 126, 213-366]",
+                "type": "TRIP",
+                "inputClass": "FACTOR",
+                "value": 8
+            }],
+            "available": true
+        },
+        "coverageLimits": [{
+            "category": "MED",
+            "basis": "INSDTRIP",
+            "limit": 5000000,
+            "priceItemCode": "TU-COVERAGE-2000343",
+            "sourceType": "BASE"
+        }],
+        "travelDirectionType": "OUTBOUND"
+    }
+    ],
+    "selectedPlanPrices": {
+        "totalPremiums": 0.00,
+        "totalTaxes": 0.00,
+        "totalCost": 0.00,
+        "selectedPlanPriceBreakDown": []
+    }
+}

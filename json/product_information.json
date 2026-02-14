@@ -1,0 +1,3411 @@
+{
+    "data": {
+        "size": 3,
+        "items": [{
+            "name": "Traveller GENERIC Tier 3",
+            "code": "BUN-FDM-GEN",
+            "description": "",
+            "tier": "TIER3",
+            "productLine": {
+                "name": "Traveller Travel Insurance",
+                "code": "PR-FDM-1",
+                "description": "",
+                "type": "TRAVELPROD"
+            },
+            "plans": [{
+                "name": "Traveller - AD&D - Multi Trip (MAC)",
+                "code": "PL-MADD-1",
+                "tripType": "MULTI",
+                "genericName": "Accidental Death and Dismemberment",
+                "description": "",
+                "primaryCoverageType": "ACC",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "Trip Length Range - Full Year [1-366]",
+                    "code": "TRIP",
+                    "type": "TRIP",
+                    "description": "",
+                    "inputFieldType": "NONE",
+                    "values": [{
+                        "label": "Full Year",
+                        "valueMin": 1,
+                        "valueMax": 366,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "ACC",
+                    "basis": "INSDTRIP",
+                    "valueMax": 25000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "AIR",
+                    "basis": "INSDTRIP",
+                    "valueMax": 100000
+                }]
+            }, {
+                "name": "Traveller - Medical within Canada - Multi Trip (MCB)",
+                "code": "PL-MMED-2",
+                "tripType": "MULTI",
+                "genericName": "Emergency Medical Within Canada",
+                "description": "",
+                "destination": "DESTWWCAN",
+                "direction": "OUTBOUND",
+                "primaryCoverageType": "MED",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "TRAV-GEN-Deductible [0, 300, 500...] $300 default CAD V.2",
+                    "code": "PM-DED-29",
+                    "type": "DED",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "labelFrench": "0 $",
+                        "value": 0,
+                        "discountPct": -15,
+                        "default": false
+                    }, {
+                        "label": "$300",
+                        "labelFrench": "300 $",
+                        "value": 300,
+                        "discountPct": 0,
+                        "default": true
+                    }, {
+                        "label": "$500",
+                        "labelFrench": "500 $",
+                        "value": 500,
+                        "discountPct": 5,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "labelFrench": "1 000 $",
+                        "value": 1000,
+                        "discountPct": 10,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "labelFrench": "2 000 $",
+                        "value": 2000,
+                        "discountPct": 20,
+                        "default": false
+                    }, {
+                        "label": "$5,000",
+                        "labelFrench": "5 000 $",
+                        "value": 5000,
+                        "discountPct": 30,
+                        "default": false
+                    }, {
+                        "label": "$10,000",
+                        "labelFrench": "10 000 $",
+                        "value": 10000,
+                        "discountPct": 40,
+                        "default": false
+                    }, {
+                        "label": "$25,000",
+                        "labelFrench": "25 000 $",
+                        "value": 25000,
+                        "discountPct": 55,
+                        "default": false
+                    }, {
+                        "label": "$50,000",
+                        "labelFrench": "50 000 $",
+                        "value": 50000,
+                        "discountPct": 65,
+                        "default": false
+                    }, {
+                        "label": "$100,000",
+                        "labelFrench": "100 000 $",
+                        "value": 100000,
+                        "discountPct": 75,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Backcountry Skiing",
+                    "code": "PM-SPORT-1",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Backcountry Skiing",
+                        "value": 0,
+                        "discountPct": -200,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Boxing",
+                    "code": "PM-SPORT-2",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Boxing",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Freestyle Skiing",
+                    "code": "PM-SPORT-3",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Freestyle Skiing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Mountain Biking",
+                    "code": "PM-SPORT-4",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Mountain Biking",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Climbing",
+                    "code": "PM-SPORT-5",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Climbing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mixed Martial Arts",
+                    "code": "PM-SPORT-6",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mixed Martial Arts",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rock Climbing",
+                    "code": "PM-SPORT-8",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rock Climbing",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Football (American and Canadian)",
+                    "code": "PM-SPORT-9",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Football (American and Canadian)",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Hockey",
+                    "code": "PM-SPORT10",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Hockey",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rugby",
+                    "code": "PM-SPORT11",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rugby",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - BASE Jumping",
+                    "code": "PM-SPORT12",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "BASE Jumping",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Hang Gliding/Paragliding",
+                    "code": "PM-SPORT13",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Hang Gliding/Paragliding",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Snowmobiling",
+                    "code": "PM-SPORT14",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Snowmobiling",
+                        "value": 0,
+                        "discountPct": -500,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Parachuting",
+                    "code": "PM-SPORT16",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Parachuting",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Scuba Diving",
+                    "code": "PM-SPORT17",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Scuba Diving",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - White Water Sports",
+                    "code": "PM-SPORT18",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "White Water Sports",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Wingsuit Flying",
+                    "code": "PM-SPORT19",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Wingsuit Flying",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering up to 6000m",
+                    "code": "PM-SPORT20",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering up to 6000m",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering over 6000m",
+                    "code": "PM-SPORT21",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering over 6000m",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Motorized Speed Activities",
+                    "code": "PM-SPORT22",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Motorized Speed Activities",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Top Up - Coverage only",
+                    "code": "PM-TOP-1",
+                    "type": "BENE",
+                    "subType": "TOPUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Top-up",
+                        "labelFrench": "Complement",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Trip Length Options - 5, 10, 20, 35, 60",
+                    "code": "TRIP",
+                    "type": "TRIP",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "5 days",
+                        "value": 5,
+                        "default": false
+                    }, {
+                        "label": "10 days",
+                        "value": 10,
+                        "default": false
+                    }, {
+                        "label": "20 days",
+                        "value": 20,
+                        "default": false
+                    }, {
+                        "label": "35 days",
+                        "value": 35,
+                        "default": false
+                    }, {
+                        "label": "60 days",
+                        "value": 60,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": ["QU-ADEP-1"],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "MED",
+                    "basis": "INSDTRIP",
+                    "valueMax": 5000000
+                }]
+            }, {
+                "name": "Traveller - Medical Worldwide - Multi Trip (MW)",
+                "code": "PL-MMED-3",
+                "tripType": "MULTI",
+                "genericName": "Emergency Medical Worldwide",
+                "description": "",
+                "destination": "DESTWW",
+                "direction": "OUTBOUND",
+                "primaryCoverageType": "MED",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "TRAV-GEN-Deductible [0, 300, 500...] $300 default USD V.2",
+                    "code": "PM-DED-28",
+                    "type": "DED",
+                    "description": "",
+                    "currency": "USD",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "labelFrench": "0 $",
+                        "value": 0,
+                        "discountPct": -15,
+                        "default": false
+                    }, {
+                        "label": "$300",
+                        "labelFrench": "300 $",
+                        "value": 300,
+                        "discountPct": 0,
+                        "default": true
+                    }, {
+                        "label": "$500",
+                        "labelFrench": "500 $",
+                        "value": 500,
+                        "discountPct": 5,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "labelFrench": "1 000 $",
+                        "value": 1000,
+                        "discountPct": 10,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "labelFrench": "2 000 $",
+                        "value": 2000,
+                        "discountPct": 20,
+                        "default": false
+                    }, {
+                        "label": "$5,000",
+                        "labelFrench": "5 000 $",
+                        "value": 5000,
+                        "discountPct": 30,
+                        "default": false
+                    }, {
+                        "label": "$10,000",
+                        "labelFrench": "10 000",
+                        "value": 10000,
+                        "discountPct": 40,
+                        "default": false
+                    }, {
+                        "label": "$25,000",
+                        "labelFrench": "25 000 $",
+                        "value": 25000,
+                        "discountPct": 55,
+                        "default": false
+                    }, {
+                        "label": "$50,000",
+                        "labelFrench": "50 000 $",
+                        "value": 50000,
+                        "discountPct": 65,
+                        "default": false
+                    }, {
+                        "label": "$100,000",
+                        "labelFrench": "100 000 $",
+                        "value": 100000,
+                        "discountPct": 75,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TRAV-CUS - Renewal Discount - 5% -  POS only",
+                    "code": "PM-REN-4",
+                    "type": "DISC",
+                    "subType": "RNWL",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "NONE",
+                    "values": [{
+                        "label": "Renewal Discount",
+                        "labelFrench": "Épargne Renouvellement",
+                        "value": 0,
+                        "discountPct": 5,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Backcountry Skiing",
+                    "code": "PM-SPORT-1",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Backcountry Skiing",
+                        "value": 0,
+                        "discountPct": -200,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Boxing",
+                    "code": "PM-SPORT-2",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Boxing",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Freestyle Skiing",
+                    "code": "PM-SPORT-3",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Freestyle Skiing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Mountain Biking",
+                    "code": "PM-SPORT-4",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Mountain Biking",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Climbing",
+                    "code": "PM-SPORT-5",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Climbing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mixed Martial Arts",
+                    "code": "PM-SPORT-6",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mixed Martial Arts",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rock Climbing",
+                    "code": "PM-SPORT-8",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rock Climbing",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Football (American and Canadian)",
+                    "code": "PM-SPORT-9",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Football (American and Canadian)",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Hockey",
+                    "code": "PM-SPORT10",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Hockey",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rugby",
+                    "code": "PM-SPORT11",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rugby",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - BASE Jumping",
+                    "code": "PM-SPORT12",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "BASE Jumping",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Hang Gliding/Paragliding",
+                    "code": "PM-SPORT13",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Hang Gliding/Paragliding",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Snowmobiling",
+                    "code": "PM-SPORT14",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Snowmobiling",
+                        "value": 0,
+                        "discountPct": -500,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Parachuting",
+                    "code": "PM-SPORT16",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Parachuting",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Scuba Diving",
+                    "code": "PM-SPORT17",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Scuba Diving",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - White Water Sports",
+                    "code": "PM-SPORT18",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "White Water Sports",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Wingsuit Flying",
+                    "code": "PM-SPORT19",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Wingsuit Flying",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering up to 6000m",
+                    "code": "PM-SPORT20",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering up to 6000m",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering over 6000m",
+                    "code": "PM-SPORT21",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering over 6000m",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Motorized Speed Activities",
+                    "code": "PM-SPORT22",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Motorized Speed Activities",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Top Up - Coverage only",
+                    "code": "PM-TOP-1",
+                    "type": "BENE",
+                    "subType": "TOPUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Top-up",
+                        "labelFrench": "Complement",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Trip Length Options - 2, 5, 10, 15, 20, 35, 60",
+                    "code": "TRIP",
+                    "type": "TRIP",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "2 days",
+                        "value": 2,
+                        "default": false
+                    }, {
+                        "label": "5 days",
+                        "value": 5,
+                        "default": false
+                    }, {
+                        "label": "10 days",
+                        "value": 10,
+                        "default": false
+                    }, {
+                        "label": "15 days",
+                        "value": 15,
+                        "default": false
+                    }, {
+                        "label": "20 days",
+                        "value": 20,
+                        "default": false
+                    }, {
+                        "label": "35 days",
+                        "value": 35,
+                        "default": false
+                    }, {
+                        "label": "60 days",
+                        "value": 60,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": ["QU-FMQ", "QU-TMQ-2", "QU-TMQ-3", "QU-TMQ-5", "QU-ADEP-1", "QU-TMQ-4", "QU-TMQ-6"],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "MED",
+                    "basis": "INSDTRIP",
+                    "valueMax": 5000000
+                }]
+            }, {
+                "name": "Traveller - Trip Cancellation - Multi Trip (MTC)",
+                "code": "PL-MTCAN-1",
+                "tripType": "MULTI",
+                "genericName": "Trip Cancellation/Trip Interruption",
+                "description": "",
+                "primaryCoverageType": "TRIPCAN",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "Cancel For Any Reason MTC STC Rider",
+                    "code": "PM-CFAR-3",
+                    "type": "RIDE",
+                    "subType": "CFAR",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "CFAR Rider",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Sum Insured Before Dept - 0 to 10000 w/1250",
+                    "code": "SUMP",
+                    "type": "SUMP",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "valueMin": 0,
+                        "valueMax": 0,
+                        "default": false
+                    }, {
+                        "label": "$400",
+                        "valueMin": 1,
+                        "valueMax": 400,
+                        "default": false
+                    }, {
+                        "label": "$700",
+                        "valueMin": 401,
+                        "valueMax": 700,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "valueMin": 701,
+                        "valueMax": 1000,
+                        "default": false
+                    }, {
+                        "label": "$1,250",
+                        "valueMin": 1001,
+                        "valueMax": 1250,
+                        "default": false
+                    }, {
+                        "label": "$1,500",
+                        "valueMin": 1251,
+                        "valueMax": 1500,
+                        "default": false
+                    }, {
+                        "label": "$1,750",
+                        "valueMin": 1501,
+                        "valueMax": 1750,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "valueMin": 1751,
+                        "valueMax": 2000,
+                        "default": false
+                    }, {
+                        "label": "$2,250",
+                        "valueMin": 2001,
+                        "valueMax": 2250,
+                        "default": false
+                    }, {
+                        "label": "$2,500",
+                        "valueMin": 2251,
+                        "valueMax": 2500,
+                        "default": false
+                    }, {
+                        "label": "$3,000",
+                        "valueMin": 2501,
+                        "valueMax": 3000,
+                        "default": false
+                    }, {
+                        "label": "$3,100 - 20,000",
+                        "valueMin": 3001,
+                        "valueMax": 20000,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "TRIPCAN",
+                    "basis": "PERINS",
+                    "priceInputParameter": "SUMP"
+                }, {
+                    "type": "BENEFIT",
+                    "category": "TRIPINT",
+                    "basis": "PERINS",
+                    "valueMax": 25000
+                }]
+            }, {
+                "name": "Traveller - Trip Interruption - Multi Trip (MTI)",
+                "code": "PL-MTI-1",
+                "tripType": "MULTI",
+                "genericName": "Trip Interruption",
+                "description": "",
+                "primaryCoverageType": "TRIPINT",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "Sum Insured After Dept - 800, 1500, 10K, 25K",
+                    "code": "SUMA",
+                    "type": "SUMA",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$1,500",
+                        "value": 1500,
+                        "default": false
+                    }, {
+                        "label": "$10,000",
+                        "value": 10000,
+                        "default": false
+                    }, {
+                        "label": "$25,000",
+                        "value": 25000,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "TRIPINT",
+                    "basis": "PERINS",
+                    "priceInputParameter": "SUMA"
+                }]
+            }, {
+                "name": "Traveller - AD&D - Single Trip (SAC) Outbound",
+                "code": "PL-SADD-5",
+                "tripType": "SINGLE",
+                "genericName": "Accidental Death and Dismemberment",
+                "description": "",
+                "primaryCoverageType": "ACC",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "AIR",
+                    "basis": "PERINS",
+                    "valueMax": 100000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "ACC",
+                    "basis": "PERINS",
+                    "valueMax": 25000
+                }]
+            }, {
+                "name": "Traveller - Baggage - Single Trip (SBG) Outbound",
+                "code": "PL-SBAG-3",
+                "tripType": "SINGLE",
+                "genericName": "Baggage",
+                "description": "",
+                "primaryCoverageType": "BAG",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "BAG",
+                    "basis": "PERINS",
+                    "valueMax": 1500
+                }]
+            }, {
+                "name": "Traveller - Medical within Canada - Single Trip (SCB)",
+                "code": "PL-SMED-1",
+                "tripType": "SINGLE",
+                "genericName": "Emergency Medical Within Canada",
+                "description": "",
+                "destination": "DESTWWCAN",
+                "direction": "OUTBOUND",
+                "primaryCoverageType": "MED",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "TRAV-GEN-Deductible [0, 300, 500...] $300 default CAD V.2",
+                    "code": "PM-DED-29",
+                    "type": "DED",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "labelFrench": "0 $",
+                        "value": 0,
+                        "discountPct": -15,
+                        "default": false
+                    }, {
+                        "label": "$300",
+                        "labelFrench": "300 $",
+                        "value": 300,
+                        "discountPct": 0,
+                        "default": true
+                    }, {
+                        "label": "$500",
+                        "labelFrench": "500 $",
+                        "value": 500,
+                        "discountPct": 5,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "labelFrench": "1 000 $",
+                        "value": 1000,
+                        "discountPct": 10,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "labelFrench": "2 000 $",
+                        "value": 2000,
+                        "discountPct": 20,
+                        "default": false
+                    }, {
+                        "label": "$5,000",
+                        "labelFrench": "5 000 $",
+                        "value": 5000,
+                        "discountPct": 30,
+                        "default": false
+                    }, {
+                        "label": "$10,000",
+                        "labelFrench": "10 000 $",
+                        "value": 10000,
+                        "discountPct": 40,
+                        "default": false
+                    }, {
+                        "label": "$25,000",
+                        "labelFrench": "25 000 $",
+                        "value": 25000,
+                        "discountPct": 55,
+                        "default": false
+                    }, {
+                        "label": "$50,000",
+                        "labelFrench": "50 000 $",
+                        "value": 50000,
+                        "discountPct": 65,
+                        "default": false
+                    }, {
+                        "label": "$100,000",
+                        "labelFrench": "100 000 $",
+                        "value": 100000,
+                        "discountPct": 75,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Backcountry Skiing",
+                    "code": "PM-SPORT-1",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Backcountry Skiing",
+                        "value": 0,
+                        "discountPct": -200,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Boxing",
+                    "code": "PM-SPORT-2",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Boxing",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Freestyle Skiing",
+                    "code": "PM-SPORT-3",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Freestyle Skiing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Mountain Biking",
+                    "code": "PM-SPORT-4",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Mountain Biking",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Climbing",
+                    "code": "PM-SPORT-5",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Climbing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mixed Martial Arts",
+                    "code": "PM-SPORT-6",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mixed Martial Arts",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rock Climbing",
+                    "code": "PM-SPORT-8",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rock Climbing",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Football (American and Canadian)",
+                    "code": "PM-SPORT-9",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Football (American and Canadian)",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Hockey",
+                    "code": "PM-SPORT10",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Hockey",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rugby",
+                    "code": "PM-SPORT11",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rugby",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - BASE Jumping",
+                    "code": "PM-SPORT12",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "BASE Jumping",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Hang Gliding/Paragliding",
+                    "code": "PM-SPORT13",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Hang Gliding/Paragliding",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Snowmobiling",
+                    "code": "PM-SPORT14",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Snowmobiling",
+                        "value": 0,
+                        "discountPct": -500,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Parachuting",
+                    "code": "PM-SPORT16",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Parachuting",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Scuba Diving",
+                    "code": "PM-SPORT17",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Scuba Diving",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - White Water Sports",
+                    "code": "PM-SPORT18",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "White Water Sports",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Wingsuit Flying",
+                    "code": "PM-SPORT19",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Wingsuit Flying",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering up to 6000m",
+                    "code": "PM-SPORT20",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering up to 6000m",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering over 6000m",
+                    "code": "PM-SPORT21",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering over 6000m",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Motorized Speed Activities",
+                    "code": "PM-SPORT22",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Motorized Speed Activities",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Top Up - Coverage only",
+                    "code": "PM-TOP-1",
+                    "type": "BENE",
+                    "subType": "TOPUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Top-up",
+                        "labelFrench": "Complement",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": ["QU-ADEP-1"],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "MED",
+                    "basis": "INSDTRIP",
+                    "valueMax": 5000000
+                }]
+            }, {
+                "name": "Traveller - Medical Worldwide - Single Trip (SW)",
+                "code": "PL-SMED-3",
+                "tripType": "SINGLE",
+                "genericName": "Emergency Medical Worldwide",
+                "description": "",
+                "destination": "DESTWW",
+                "direction": "OUTBOUND",
+                "primaryCoverageType": "MED",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "TRAV-GEN-Deductible [0, 300, 500...] $300 default USD V.2",
+                    "code": "PM-DED-28",
+                    "type": "DED",
+                    "description": "",
+                    "currency": "USD",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "labelFrench": "0 $",
+                        "value": 0,
+                        "discountPct": -15,
+                        "default": false
+                    }, {
+                        "label": "$300",
+                        "labelFrench": "300 $",
+                        "value": 300,
+                        "discountPct": 0,
+                        "default": true
+                    }, {
+                        "label": "$500",
+                        "labelFrench": "500 $",
+                        "value": 500,
+                        "discountPct": 5,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "labelFrench": "1 000 $",
+                        "value": 1000,
+                        "discountPct": 10,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "labelFrench": "2 000 $",
+                        "value": 2000,
+                        "discountPct": 20,
+                        "default": false
+                    }, {
+                        "label": "$5,000",
+                        "labelFrench": "5 000 $",
+                        "value": 5000,
+                        "discountPct": 30,
+                        "default": false
+                    }, {
+                        "label": "$10,000",
+                        "labelFrench": "10 000",
+                        "value": 10000,
+                        "discountPct": 40,
+                        "default": false
+                    }, {
+                        "label": "$25,000",
+                        "labelFrench": "25 000 $",
+                        "value": 25000,
+                        "discountPct": 55,
+                        "default": false
+                    }, {
+                        "label": "$50,000",
+                        "labelFrench": "50 000 $",
+                        "value": 50000,
+                        "discountPct": 65,
+                        "default": false
+                    }, {
+                        "label": "$100,000",
+                        "labelFrench": "100 000 $",
+                        "value": 100000,
+                        "discountPct": 75,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Group Discount",
+                    "code": "PM-GROUP-1",
+                    "type": "DISC",
+                    "subType": "GROUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "15 to 20 inclusively",
+                        "labelFrench": "15 à 20 inclusivement",
+                        "value": 1,
+                        "discountPct": 10,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Backcountry Skiing",
+                    "code": "PM-SPORT-1",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Backcountry Skiing",
+                        "value": 0,
+                        "discountPct": -200,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Boxing",
+                    "code": "PM-SPORT-2",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Boxing",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Freestyle Skiing",
+                    "code": "PM-SPORT-3",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Freestyle Skiing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Mountain Biking",
+                    "code": "PM-SPORT-4",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Mountain Biking",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Climbing",
+                    "code": "PM-SPORT-5",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Climbing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mixed Martial Arts",
+                    "code": "PM-SPORT-6",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mixed Martial Arts",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rock Climbing",
+                    "code": "PM-SPORT-8",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rock Climbing",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Football (American and Canadian)",
+                    "code": "PM-SPORT-9",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Football (American and Canadian)",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Hockey",
+                    "code": "PM-SPORT10",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Hockey",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rugby",
+                    "code": "PM-SPORT11",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rugby",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - BASE Jumping",
+                    "code": "PM-SPORT12",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "BASE Jumping",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Hang Gliding/Paragliding",
+                    "code": "PM-SPORT13",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Hang Gliding/Paragliding",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Snowmobiling",
+                    "code": "PM-SPORT14",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Snowmobiling",
+                        "value": 0,
+                        "discountPct": -500,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Parachuting",
+                    "code": "PM-SPORT16",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Parachuting",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Scuba Diving",
+                    "code": "PM-SPORT17",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Scuba Diving",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - White Water Sports",
+                    "code": "PM-SPORT18",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "White Water Sports",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Wingsuit Flying",
+                    "code": "PM-SPORT19",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Wingsuit Flying",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering up to 6000m",
+                    "code": "PM-SPORT20",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering up to 6000m",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering over 6000m",
+                    "code": "PM-SPORT21",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering over 6000m",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Motorized Speed Activities",
+                    "code": "PM-SPORT22",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Motorized Speed Activities",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Top Up - Coverage only",
+                    "code": "PM-TOP-1",
+                    "type": "BENE",
+                    "subType": "TOPUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Top-up",
+                        "labelFrench": "Complement",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": ["QU-FMQ", "QU-TMQ-2", "QU-TMQ-3", "QU-ADEP-1", "QU-TMQ-5", "QU-TMQ-4", "QU-TMQ-6"],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "MED",
+                    "basis": "INSDTRIP",
+                    "valueMax": 5000000
+                }]
+            }, {
+                "name": "Traveller - Medical Worldwide xUSA - Single Trip (SX)",
+                "code": "PL-SMED-4",
+                "tripType": "SINGLE",
+                "genericName": "Emergency Medical Excluding USA",
+                "description": "",
+                "destination": "DESTWWUSA",
+                "direction": "OUTBOUND",
+                "primaryCoverageType": "MED",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "TRAV-GEN-Deductible [0, 300, 500...] $300 default USD V.2",
+                    "code": "PM-DED-28",
+                    "type": "DED",
+                    "description": "",
+                    "currency": "USD",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "labelFrench": "0 $",
+                        "value": 0,
+                        "discountPct": -15,
+                        "default": false
+                    }, {
+                        "label": "$300",
+                        "labelFrench": "300 $",
+                        "value": 300,
+                        "discountPct": 0,
+                        "default": true
+                    }, {
+                        "label": "$500",
+                        "labelFrench": "500 $",
+                        "value": 500,
+                        "discountPct": 5,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "labelFrench": "1 000 $",
+                        "value": 1000,
+                        "discountPct": 10,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "labelFrench": "2 000 $",
+                        "value": 2000,
+                        "discountPct": 20,
+                        "default": false
+                    }, {
+                        "label": "$5,000",
+                        "labelFrench": "5 000 $",
+                        "value": 5000,
+                        "discountPct": 30,
+                        "default": false
+                    }, {
+                        "label": "$10,000",
+                        "labelFrench": "10 000",
+                        "value": 10000,
+                        "discountPct": 40,
+                        "default": false
+                    }, {
+                        "label": "$25,000",
+                        "labelFrench": "25 000 $",
+                        "value": 25000,
+                        "discountPct": 55,
+                        "default": false
+                    }, {
+                        "label": "$50,000",
+                        "labelFrench": "50 000 $",
+                        "value": 50000,
+                        "discountPct": 65,
+                        "default": false
+                    }, {
+                        "label": "$100,000",
+                        "labelFrench": "100 000 $",
+                        "value": 100000,
+                        "discountPct": 75,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Group Discount",
+                    "code": "PM-GROUP-1",
+                    "type": "DISC",
+                    "subType": "GROUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "15 to 20 inclusively",
+                        "labelFrench": "15 à 20 inclusivement",
+                        "value": 1,
+                        "discountPct": 10,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Backcountry Skiing",
+                    "code": "PM-SPORT-1",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Backcountry Skiing",
+                        "value": 0,
+                        "discountPct": -200,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Boxing",
+                    "code": "PM-SPORT-2",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Boxing",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Freestyle Skiing",
+                    "code": "PM-SPORT-3",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Freestyle Skiing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Mountain Biking",
+                    "code": "PM-SPORT-4",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Mountain Biking",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Climbing",
+                    "code": "PM-SPORT-5",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Climbing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mixed Martial Arts",
+                    "code": "PM-SPORT-6",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mixed Martial Arts",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rock Climbing",
+                    "code": "PM-SPORT-8",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rock Climbing",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Football (American and Canadian)",
+                    "code": "PM-SPORT-9",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Football (American and Canadian)",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Hockey",
+                    "code": "PM-SPORT10",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Hockey",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rugby",
+                    "code": "PM-SPORT11",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rugby",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - BASE Jumping",
+                    "code": "PM-SPORT12",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "BASE Jumping",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Hang Gliding/Paragliding",
+                    "code": "PM-SPORT13",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Hang Gliding/Paragliding",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Snowmobiling",
+                    "code": "PM-SPORT14",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Snowmobiling",
+                        "value": 0,
+                        "discountPct": -500,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Parachuting",
+                    "code": "PM-SPORT16",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Parachuting",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Scuba Diving",
+                    "code": "PM-SPORT17",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Scuba Diving",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - White Water Sports",
+                    "code": "PM-SPORT18",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "White Water Sports",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Wingsuit Flying",
+                    "code": "PM-SPORT19",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Wingsuit Flying",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering up to 6000m",
+                    "code": "PM-SPORT20",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering up to 6000m",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering over 6000m",
+                    "code": "PM-SPORT21",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering over 6000m",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Motorized Speed Activities",
+                    "code": "PM-SPORT22",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Motorized Speed Activities",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Top Up - Coverage only",
+                    "code": "PM-TOP-1",
+                    "type": "BENE",
+                    "subType": "TOPUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Top-up",
+                        "labelFrench": "Complement",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": ["QU-FMQ", "QU-TMQ-2", "QU-TMQ-3", "QU-TMQ-5", "QU-ADEP-1", "QU-TMQ-6", "QU-TMQ-4"],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "MED",
+                    "basis": "INSDTRIP",
+                    "valueMax": 5000000
+                }]
+            }, {
+                "name": "Traveller - Non Medical Package - Single Trip (SNMP) Outbound",
+                "code": "PL-SPCK-17",
+                "tripType": "SINGLE",
+                "genericName": "Non-Medical Package",
+                "description": "",
+                "primaryCoverageType": "PKG",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "Cancel For Any Reason SNMP Rider",
+                    "code": "PM-CFAR-2",
+                    "type": "RIDE",
+                    "subType": "CFAR",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "CFAR Rider",
+                        "value": 0,
+                        "discountPct": -34,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Sum Insured Before Dept - 0 to 10000 w/1250",
+                    "code": "SUMP",
+                    "type": "SUMP",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "valueMin": 0,
+                        "valueMax": 0,
+                        "default": false
+                    }, {
+                        "label": "$400",
+                        "valueMin": 1,
+                        "valueMax": 400,
+                        "default": false
+                    }, {
+                        "label": "$700",
+                        "valueMin": 401,
+                        "valueMax": 700,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "valueMin": 701,
+                        "valueMax": 1000,
+                        "default": false
+                    }, {
+                        "label": "$1,250",
+                        "valueMin": 1001,
+                        "valueMax": 1250,
+                        "default": false
+                    }, {
+                        "label": "$1,500",
+                        "valueMin": 1251,
+                        "valueMax": 1500,
+                        "default": false
+                    }, {
+                        "label": "$1,750",
+                        "valueMin": 1501,
+                        "valueMax": 1750,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "valueMin": 1751,
+                        "valueMax": 2000,
+                        "default": false
+                    }, {
+                        "label": "$2,250",
+                        "valueMin": 2001,
+                        "valueMax": 2250,
+                        "default": false
+                    }, {
+                        "label": "$2,500",
+                        "valueMin": 2251,
+                        "valueMax": 2500,
+                        "default": false
+                    }, {
+                        "label": "$3,000",
+                        "valueMin": 2501,
+                        "valueMax": 3000,
+                        "default": false
+                    }, {
+                        "label": "$3,100 - 10,000",
+                        "valueMin": 3001,
+                        "valueMax": 10000,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "TRIPCAN",
+                    "basis": "PERINS",
+                    "priceInputParameter": "SUMP"
+                }, {
+                    "type": "BENEFIT",
+                    "category": "ACC",
+                    "basis": "PERINS",
+                    "valueMax": 25000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "BAG",
+                    "basis": "PERINS",
+                    "valueMax": 500
+                }, {
+                    "type": "BENEFIT",
+                    "category": "AIR",
+                    "basis": "PERINS",
+                    "valueMax": 100000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "TRIPINT",
+                    "basis": "PERINS",
+                    "valueMax": 25000
+                }]
+            }, {
+                "name": "Traveller - All Inclusive - Single Trip (SWP)",
+                "code": "PL-SPCK-2",
+                "tripType": "SINGLE",
+                "genericName": "All Inclusive Package",
+                "description": "",
+                "primaryCoverageType": "PKG",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "Cancel For Any Reason SWP Rider",
+                    "code": "PM-CFAR-1",
+                    "type": "RIDE",
+                    "subType": "CFAR",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "CFAR Rider",
+                        "value": 0,
+                        "discountPct": -25,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Sum Insured Before Dept - 0 to 10000 w/1400",
+                    "code": "SUMP",
+                    "type": "SUMP",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "valueMin": 0,
+                        "valueMax": 0,
+                        "default": false
+                    }, {
+                        "label": "$400",
+                        "valueMin": 1,
+                        "valueMax": 400,
+                        "default": false
+                    }, {
+                        "label": "$700",
+                        "valueMin": 401,
+                        "valueMax": 700,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "valueMin": 701,
+                        "valueMax": 1000,
+                        "default": false
+                    }, {
+                        "label": "$1,400",
+                        "valueMin": 1001,
+                        "valueMax": 1400,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "valueMin": 1401,
+                        "valueMax": 2000,
+                        "default": false
+                    }, {
+                        "label": "$2,100",
+                        "valueMin": 2001,
+                        "valueMax": 2100,
+                        "default": false
+                    }, {
+                        "label": "$2,200",
+                        "valueMin": 2101,
+                        "valueMax": 2200,
+                        "default": false
+                    }, {
+                        "label": "$2,300",
+                        "valueMin": 2201,
+                        "valueMax": 2300,
+                        "default": false
+                    }, {
+                        "label": "$2,400",
+                        "valueMin": 2301,
+                        "valueMax": 2400,
+                        "default": false
+                    }, {
+                        "label": "$2,500",
+                        "valueMin": 2401,
+                        "valueMax": 2500,
+                        "default": false
+                    }, {
+                        "label": "$2,600",
+                        "valueMin": 2501,
+                        "valueMax": 2600,
+                        "default": false
+                    }, {
+                        "label": "$2,700",
+                        "valueMin": 2601,
+                        "valueMax": 2700,
+                        "default": false
+                    }, {
+                        "label": "$2,800",
+                        "valueMin": 2701,
+                        "valueMax": 2800,
+                        "default": false
+                    }, {
+                        "label": "$2,900",
+                        "valueMin": 2801,
+                        "valueMax": 2900,
+                        "default": false
+                    }, {
+                        "label": "$3,000",
+                        "valueMin": 2901,
+                        "valueMax": 3000,
+                        "default": false
+                    }, {
+                        "label": "$3,100 - 10,000",
+                        "valueMin": 3001,
+                        "valueMax": 10000,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "MED",
+                    "basis": "INSDTRIP",
+                    "valueMax": 5000000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "TRIPCAN",
+                    "basis": "INSDTRIP",
+                    "priceInputParameter": "SUMP"
+                }, {
+                    "type": "BENEFIT",
+                    "category": "TRIPINT",
+                    "basis": "INSDTRIP",
+                    "valueMax": 25000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "ACC",
+                    "basis": "INSDTRIP",
+                    "valueMax": 25000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "AIR",
+                    "basis": "INSDTRIP",
+                    "valueMax": 100000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "BAG",
+                    "basis": "INSDTRIP",
+                    "valueMax": 500
+                }]
+            }, {
+                "name": "Traveller - Rental Car - Single Trip (SRC) Outbound",
+                "code": "PL-SSRC-3",
+                "tripType": "SINGLE",
+                "genericName": "Rental Car Protection",
+                "description": "",
+                "primaryCoverageType": "CAR",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [],
+                "questionnaires": ["QU-ADEP-1"],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "CAR",
+                    "basis": "VEHICLE",
+                    "valueMax": 75000
+                }]
+            }, {
+                "name": "Traveller - Trip Cancellation - Single Trip (STC) Outbound",
+                "code": "PL-STCAN-7",
+                "tripType": "SINGLE",
+                "genericName": "Trip Cancellation/Trip Interruption",
+                "description": "",
+                "primaryCoverageType": "TRIPCAN",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "Cancel For Any Reason MTC STC Rider",
+                    "code": "PM-CFAR-3",
+                    "type": "RIDE",
+                    "subType": "CFAR",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "CFAR Rider",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Sum Insured Before Dept - 0 to 20000 w/1250",
+                    "code": "SUMP",
+                    "type": "SUMP",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "valueMin": 0,
+                        "valueMax": 0,
+                        "default": false
+                    }, {
+                        "label": "$400",
+                        "valueMin": 1,
+                        "valueMax": 400,
+                        "default": false
+                    }, {
+                        "label": "$700",
+                        "valueMin": 401,
+                        "valueMax": 700,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "valueMin": 701,
+                        "valueMax": 1000,
+                        "default": false
+                    }, {
+                        "label": "$1,250",
+                        "valueMin": 1001,
+                        "valueMax": 1250,
+                        "default": false
+                    }, {
+                        "label": "$1,500",
+                        "valueMin": 1251,
+                        "valueMax": 1500,
+                        "default": false
+                    }, {
+                        "label": "$1,750",
+                        "valueMin": 1501,
+                        "valueMax": 1750,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "valueMin": 1751,
+                        "valueMax": 2000,
+                        "default": false
+                    }, {
+                        "label": "$2,250",
+                        "valueMin": 2001,
+                        "valueMax": 2250,
+                        "default": false
+                    }, {
+                        "label": "$2,500",
+                        "valueMin": 2251,
+                        "valueMax": 2500,
+                        "default": false
+                    }, {
+                        "label": "$3,000",
+                        "valueMin": 2501,
+                        "valueMax": 3000,
+                        "default": false
+                    }, {
+                        "label": "$3,100 - $20,000",
+                        "valueMin": 3001,
+                        "valueMax": 20000,
+                        "default": false
+                    }, {
+                        "label": "$21,000 - $100,000",
+                        "valueMin": 20001,
+                        "valueMax": 100000,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "TRIPCAN",
+                    "basis": "PERINS",
+                    "priceInputParameter": "SUMP"
+                }, {
+                    "type": "BENEFIT",
+                    "category": "TRIPINT",
+                    "basis": "PERINS",
+                    "valueMax": 25000
+                }]
+            }, {
+                "name": "Traveller - Trip Interruption - Single Trip (STI) Outbound",
+                "code": "PL-STI-3",
+                "tripType": "SINGLE",
+                "genericName": "Trip Interruption",
+                "description": "",
+                "primaryCoverageType": "TRIPINT",
+                "insuredType": ["CANADIAN"],
+                "priceInputs": [{
+                    "name": "Sum Insured After Dept - 800, 1500, 10K, 25K",
+                    "code": "SUMA",
+                    "type": "SUMA",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$1,500",
+                        "value": 1500,
+                        "default": false
+                    }, {
+                        "label": "$10,000",
+                        "value": 10000,
+                        "default": false
+                    }, {
+                        "label": "$25,000",
+                        "value": 25000,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "TRIPINT",
+                    "basis": "PERINS",
+                    "priceInputParameter": "SUMA"
+                }]
+            }]
+        }, {
+            "name": "Visitors to Canada Tier 1",
+            "code": "BUN-VIS-T1",
+            "description": "",
+            "tier": "TIER1",
+            "productLine": {
+                "name": "Visitors to Canada",
+                "code": "PR-VIS-1",
+                "description": "",
+                "type": "TRAVELPROD"
+            },
+            "plans": [{
+                "name": "New Visitors to Canada - AD&D - Single Trip (SAC)",
+                "code": "PL-SADD-6",
+                "tripType": "SINGLE",
+                "genericName": "Accidental Death and Dismemberment",
+                "description": "",
+                "primaryCoverageType": "ACC",
+                "insuredType": ["VISITOR"],
+                "priceInputs": [{
+                    "name": "TRAV-CUS - No Service Fees V.1",
+                    "code": "PM-BEN-35",
+                    "type": "BENE",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "NONE",
+                    "values": [{
+                        "label": "No Service Fee",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "ACC",
+                    "basis": "PERINS",
+                    "valueMax": 25000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "AIR",
+                    "basis": "PERINS",
+                    "valueMax": 100000
+                }]
+            }, {
+                "name": "New Visitors to Canada Tier 1 Medical",
+                "code": "PL-SMED-21",
+                "tripType": "SINGLE",
+                "genericName": "Visitors to Canada Medical",
+                "description": "",
+                "direction": "INBOUND",
+                "primaryCoverageType": "MED",
+                "insuredType": ["VISITOR"],
+                "priceInputs": [{   
+                    "name": "TRAV-CUS - No Service Fees V.1",
+                    "code": "PM-BEN-35",
+                    "type": "BENE",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "NONE",
+                    "values": [{
+                        "label": "No Service Fee",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TRAV-Deductible [0, 150...] $0 default CAD",
+                    "code": "PM-DED-45",
+                    "type": "DED",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "labelFrench": "0 $",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": true
+                    }, {
+                        "label": "$150",
+                        "labelFrench": "150 $",
+                        "value": 150,
+                        "discountPct": 5,
+                        "default": false
+                    }, {
+                        "label": "$500",
+                        "labelFrench": "500 $",
+                        "value": 500,
+                        "discountPct": 10,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "labelFrench": "1 000 $",
+                        "value": 1000,
+                        "discountPct": 20,
+                        "default": false
+                    }, {
+                        "label": "$2,500",
+                        "labelFrench": "2 500 $",
+                        "value": 2500,
+                        "discountPct": 30,
+                        "default": false
+                    }, {
+                        "label": "$5,000",
+                        "labelFrench": "5 000 $",
+                        "value": 5000,
+                        "discountPct": 35,
+                        "default": false
+                    }, {
+                        "label": "$10, 000",
+                        "labelFrench": "10 000 $",
+                        "value": 10000,
+                        "discountPct": 45,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Group Discount",
+                    "code": "PM-GROUP-1",
+                    "type": "DISC",
+                    "subType": "GROUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "15 to 20 inclusively",
+                        "labelFrench": "15 à 20 inclusivement",
+                        "value": 1,
+                        "discountPct": 10,
+                        "default": false
+                    }]
+                }, {
+                    "name": "New Visitors to Canada Tier 1 PreX Rider - 25%",
+                    "code": "PM-PREX-32",
+                    "type": "RIDE",
+                    "subType": "PREX5",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "PreX Rider",
+                        "labelFrench": "Avenant - PreX",
+                        "value": 0,
+                        "discountPct": -25,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Backcountry Skiing",
+                    "code": "PM-SPORT-1",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Backcountry Skiing",
+                        "value": 0,
+                        "discountPct": -200,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Boxing",
+                    "code": "PM-SPORT-2",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Boxing",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Freestyle Skiing",
+                    "code": "PM-SPORT-3",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Freestyle Skiing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Downhill Mountain Biking",
+                    "code": "PM-SPORT-4",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Downhill Mountain Biking",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Climbing",
+                    "code": "PM-SPORT-5",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Climbing",
+                        "value": 0,
+                        "discountPct": -250,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mixed Martial Arts",
+                    "code": "PM-SPORT-6",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mixed Martial Arts",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rock Climbing",
+                    "code": "PM-SPORT-8",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rock Climbing",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Football (American and Canadian)",
+                    "code": "PM-SPORT-9",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Football (American and Canadian)",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Ice Hockey",
+                    "code": "PM-SPORT10",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Ice Hockey",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Rugby",
+                    "code": "PM-SPORT11",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Rugby",
+                        "value": 0,
+                        "discountPct": -50,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering up to 6000m",
+                    "code": "PM-SPORT20",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering up to 6000m",
+                        "value": 0,
+                        "discountPct": -150,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Mountaineering over 6000m",
+                    "code": "PM-SPORT21",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Mountaineering over 6000m",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - BASE Jumping (Visitors)",
+                    "code": "PM-VSPT-12",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "BASE Jumping",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Hang Gliding/Paragliding (Visitors)",
+                    "code": "PM-VSPT-13",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Hang Gliding/Paragliding",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Snowmobiling (Visitors)",
+                    "code": "PM-VSPT-14",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Snowmobiling",
+                        "value": 0,
+                        "discountPct": -500,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Parachuting (Visitors)",
+                    "code": "PM-VSPT-16",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Parachuting",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Scuba Diving (Visitors)",
+                    "code": "PM-VSPT-17",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Scuba Diving",
+                        "value": 0,
+                        "discountPct": -400,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - White Water Sports (Visitors)",
+                    "code": "PM-VSPT-18",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "White Water Sports",
+                        "value": 0,
+                        "discountPct": -300,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - Wingsuit Flying (Visitors)",
+                    "code": "PM-VSPT-19",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Wingsuit Flying",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "TUP Sports Rider - High Risk Motorized Speed Activities (Visitors)",
+                    "code": "PM-VSPT-22",
+                    "type": "RIDE",
+                    "subType": "SPRTRDER2020",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "High Risk Motorized Speed Activities",
+                        "value": 0,
+                        "discountPct": -1000,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Sum Insured Medical - 10K, 25K, 50K, 100K, 200K, 300K, 500K",
+                    "code": "SUMM",
+                    "type": "SUMM",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$10,000",
+                        "value": 10000,
+                        "default": false
+                    }, {
+                        "label": "$25,000",
+                        "value": 25000,
+                        "default": false
+                    }, {
+                        "label": "$50,000",
+                        "value": 50000,
+                        "default": false
+                    }, {
+                        "label": "$100,000",
+                        "value": 100000,
+                        "default": false
+                    }, {
+                        "label": "$200,000",
+                        "value": 200000,
+                        "default": false
+                    }, {
+                        "label": "$300,000",
+                        "value": 300000,
+                        "default": false
+                    }, {
+                        "label": "$500,000",
+                        "value": 500000,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": ["QU-VEQ-4", "QU-VMQ-1", "QU-VEQ-3"],
+                "coverages": [{
+                    "category": "MED",
+                    "basis": "PERINS",
+                    "priceInputParameter": "SUMM"
+                }, {
+                    "category": "ACC",
+                    "basis": "PERINS",
+                    "valueMax": 25000
+                }]
+            }, {
+                "name": "New Visitors to Canada - Trip Cancellation - Single Trip (STC)",
+                "code": "PL-STCAN-8",
+                "tripType": "SINGLE",
+                "genericName": "Trip Cancellation/Trip Interruption",
+                "description": "",
+                "primaryCoverageType": "TRIPCAN",
+                "insuredType": ["VISITOR"],
+                "priceInputs": [{
+                    "name": "TRAV-CUS - No Service Fees V.1",
+                    "code": "PM-BEN-35",
+                    "type": "BENE",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "NONE",
+                    "values": [{
+                        "label": "No Service Fee",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Sum Insured Before Dept - 0 to 20000 w/1250",
+                    "code": "SUMP",
+                    "type": "SUMP",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$0",
+                        "valueMin": 0,
+                        "valueMax": 0,
+                        "default": false
+                    }, {
+                        "label": "$400",
+                        "valueMin": 1,
+                        "valueMax": 400,
+                        "default": false
+                    }, {
+                        "label": "$700",
+                        "valueMin": 401,
+                        "valueMax": 700,
+                        "default": false
+                    }, {
+                        "label": "$1,000",
+                        "valueMin": 701,
+                        "valueMax": 1000,
+                        "default": false
+                    }, {
+                        "label": "$1,250",
+                        "valueMin": 1001,
+                        "valueMax": 1250,
+                        "default": false
+                    }, {
+                        "label": "$1,500",
+                        "valueMin": 1251,
+                        "valueMax": 1500,
+                        "default": false
+                    }, {
+                        "label": "$1,750",
+                        "valueMin": 1501,
+                        "valueMax": 1750,
+                        "default": false
+                    }, {
+                        "label": "$2,000",
+                        "valueMin": 1751,
+                        "valueMax": 2000,
+                        "default": false
+                    }, {
+                        "label": "$2,250",
+                        "valueMin": 2001,
+                        "valueMax": 2250,
+                        "default": false
+                    }, {
+                        "label": "$2,500",
+                        "valueMin": 2251,
+                        "valueMax": 2500,
+                        "default": false
+                    }, {
+                        "label": "$3,000",
+                        "valueMin": 2501,
+                        "valueMax": 3000,
+                        "default": false
+                    }, {
+                        "label": "$3,100 - $20,000",
+                        "valueMin": 3001,
+                        "valueMax": 20000,
+                        "default": false
+                    }, {
+                        "label": "$21,000 - $100,000",
+                        "valueMin": 20001,
+                        "valueMax": 100000,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "TRIPINT",
+                    "basis": "PERINS",
+                    "valueMax": 25000
+                }, {
+                    "type": "BENEFIT",
+                    "category": "TRIPCAN",
+                    "basis": "PERINS",
+                    "priceInputParameter": "SUMP"
+                }]
+            }, {
+                "name": "New Visitors to Canada - Trip Interruption - Single Trip (STI)",
+                "code": "PL-STI-4",
+                "tripType": "SINGLE",
+                "genericName": "Trip Interruption",
+                "description": "",
+                "primaryCoverageType": "TRIPINT",
+                "insuredType": ["VISITOR"],
+                "priceInputs": [{
+                    "name": "TRAV-CUS - No Service Fees V.1",
+                    "code": "PM-BEN-35",
+                    "type": "BENE",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "NONE",
+                    "values": [{
+                        "label": "No Service Fee",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Sum Insured After Dept - 800, 1500, 10K, 25K",
+                    "code": "SUMA",
+                    "type": "SUMA",
+                    "description": "",
+                    "inputFieldType": "SELECT",
+                    "values": [{
+                        "label": "$1,500",
+                        "value": 1500,
+                        "default": false
+                    }, {
+                        "label": "$10,000",
+                        "value": 10000,
+                        "default": false
+                    }, {
+                        "label": "$25,000",
+                        "value": 25000,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "type": "BENEFIT",
+                    "category": "TRIPINT",
+                    "basis": "PERINS",
+                    "priceInputParameter": "SUMA"
+                }]
+            }]
+        }, {
+            "name": "Student Tier 2 (formerly Custom 1)",
+            "code": "BUN-SMI-CUSTOMA",
+            "description": "",
+            "tier": "TIER2",
+            "productLine": {
+                "name": "Student Medical Insurance",
+                "code": "PR-SMI-1",
+                "description": "",
+                "type": "TRAVELPROD"
+            },
+            "plans": [{
+                "name": "Student Medical - Inbound - International Students SMI",
+                "code": "PL-SMED-39",
+                "tripType": "SINGLE",
+                "genericName": "Student – For International Students",
+                "description": "",
+                "direction": "INBOUND",
+                "primaryCoverageType": "MED",
+                "insuredType": ["STUDENT"],
+                "priceInputs": [{
+                    "name": "SMI-CUS#18-Add AD&D Rider - Gross - $22 V.2",
+                    "code": "PM-ADD-11",
+                    "type": "RIDE",
+                    "subType": "AD&D",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "AD & D Rider",
+                        "value": 20,
+                        "discountPct": -22,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Top Up - Coverage only",
+                    "code": "PM-TOP-1",
+                    "type": "BENE",
+                    "subType": "TOPUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Top-up",
+                        "labelFrench": "Complement",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "category": "ACC",
+                    "basis": "INSDTRIP",
+                    "valueMax": 10000
+                }, {
+                    "category": "AIR",
+                    "basis": "INSDTRIP",
+                    "valueMax": 10000
+                }, {
+                    "category": "MED",
+                    "basis": "INSDTRIP",
+                    "valueMax": 2000000
+                }]
+            }, {
+                "name": "Student Medical - Outbound - Canadian Student SMO",
+                "code": "PL-SMED-40",
+                "tripType": "SINGLE",
+                "genericName": "Student – For Canadian Students",
+                "description": "",
+                "destination": "DESTWW",
+                "direction": "OUTBOUND",
+                "primaryCoverageType": "MED",
+                "insuredType": ["STUDENT"],
+                "priceInputs": [{
+                    "name": "SMI-CUS#18-Add AD&D Rider - Gross - $22 V.2",
+                    "code": "PM-ADD-11",
+                    "type": "RIDE",
+                    "subType": "AD&D",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "AD & D Rider",
+                        "value": 20,
+                        "discountPct": -22,
+                        "default": false
+                    }]
+                }, {
+                    "name": "Top Up - Coverage only",
+                    "code": "PM-TOP-1",
+                    "type": "BENE",
+                    "subType": "TOPUP",
+                    "description": "",
+                    "currency": "CAD",
+                    "inputFieldType": "CHECKBOX",
+                    "values": [{
+                        "label": "Top-up",
+                        "labelFrench": "Complement",
+                        "value": 0,
+                        "discountPct": 0,
+                        "default": false
+                    }]
+                }],
+                "questionnaires": [],
+                "coverages": [{
+                    "category": "ACC",
+                    "basis": "INSDTRIP",
+                    "valueMax": 10000
+                }, {
+                    "category": "AIR",
+                    "basis": "INSDTRIP",
+                    "valueMax": 10000
+                }, {
+                    "category": "MED",
+                    "basis": "INSDTRIP",
+                    "valueMax": 2000000
+                }]
+            }]
+        }]
+    },
+    "meta": {
+        "type": "List of Product",
+        "resource": "/products/posFilter",
+        "sourceTotal": 3
+    }
+}

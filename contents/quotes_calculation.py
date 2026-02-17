@@ -4,7 +4,6 @@ from pptx.enum.dml import MSO_THEME_COLOR
 from datetime import datetime
 import requests
 
-# Author: Matsuru Hoshi
 # Date: 202509009
 # Modified: 20260113
 
@@ -14,16 +13,17 @@ import requests
 
 CLIENT_ID = ''
 CLIENT_SECRET = ''
+AP_URL = 'https://uat-api.tugo.com'
 
 def get_access_token():
     # API endpoint url for access token
-    token_endpoint_url = 'https://dev-api.tugo.com/v1/venture/accessToken'
+    token_endpoint_url = AP_URL + '/v1/venture/accessToken'
 
     # API parameters
     access_token_params = {
         'grant_type' : 'password',
         'user_name' : 'ENE000',
-        'password' : '',
+        'password' : 'Test1234!',
         'client_id' : CLIENT_ID,
         'client_secret' : CLIENT_SECRET
     }
@@ -50,7 +50,7 @@ def get_quote(coverage_level, access_token, client=None):
     - Assumes 'YES' answer for QU-VEQ-4 questionnaire (need to find out what is answering)
     """
     # endpoint url of travel insurance API
-    quotes_endpoint_url = 'https://dev-api.tugo.com/v1/venture/quotes/price'
+    quotes_endpoint_url = AP_URL + '/v1/venture/quotes/price'
 
     # get all insured people on trip
     insured_persons = []

@@ -7,8 +7,13 @@
 
 cd "$(dirname "$0")"
 
+echo "Activating Environment"
+source envergia/bin/activate
+
 echo "Running path:"
 pwd
 
+echo "Loading quotes document..."
+
 # run python script
-python contents/quotes_calculation.py
+python contents/ppt_generation.py

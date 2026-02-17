@@ -9,6 +9,8 @@ This program produces a travel quotes PowerPoint with the contents tailored to t
 3. Generates PowerPoint document with client travel insurance quote
 
 ### How to run
+Prerequisites: Python 3.9.2 and up + venv 
+
 1. Download all the contents from the repository into a folder on your computer
 2. Download the .csv file with the client information and put into the running folder
 3. Double-click the .command file to run

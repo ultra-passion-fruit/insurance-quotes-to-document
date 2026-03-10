@@ -23,6 +23,6 @@ Note: If you get an error saying The file “setup.command” could not be execu
 ### How to run
 Prerequisites: Python 3.9.2 and up + venv 
 
-1. Double-click the .command file to run
+1. Double-click the run.command file to run
 
 2. The quotes PowerPoint will be created in the "quoted_presentations" folder. New presentations should be added to this folder.

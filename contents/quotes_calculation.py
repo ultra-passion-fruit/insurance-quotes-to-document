@@ -5,14 +5,30 @@ from datetime import datetime
 import requests
 
 # Date: 202509009
-# Modified: 20260113
+# Modified: 20260310
 
 # This script will generate a PowerPoint (pptx) presentation for Energia Insurance.
 # The goal is to generate a PowerPoint presentation with insurance quote information from the insurance company.
 # The insurance company quote information is to be accessed with the insurance company API.
 
-CLIENT_ID = ''
-CLIENT_SECRET = ''
+keyfile = "keys.txt"
+
+with open(keyfile, 'r') as file:
+    lines = file.readlines()
+
+# Access the two lines from the list
+try:
+    if len(lines) >= 2:
+        line1 = lines[0].strip() # Use strip() to remove leading/trailing whitespace, including \n
+        line2 = lines[1].strip()
+        CLIENT_ID = line1
+        CLIENT_SECRET = line2
+    else:
+        print("One or more keys are missing.")
+except:
+    print(f"The '{keyfile}' is missing the keys.")
+
+
 AP_URL = 'https://uat-api.tugo.com'
 
 def get_access_token():

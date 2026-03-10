@@ -147,6 +147,8 @@ for x in range(1,client_dict["num_travellers"]+1):
 prs = Presentation('template.pptx')
 purple = RGBColor.from_string("ac6edf")
 
+print("\nAdding client info to cover page...")
+
 # get first slide
 cover_slide = prs.slides[0]
 
@@ -171,6 +173,8 @@ for i in range(1,5):
     print(prs.slides[0].shapes[i].text_frame.text)
 
 ############ Requesting Quote Data from API and formatting slide's table #############
+
+print("\nGetting quotes information from Tugo...")
 
 # get slide
 tugo_slide = prs.slides[2]
@@ -200,7 +204,7 @@ for coverage in coverage_levels:
 fill_table(tugo_quotes,quotes_list)
 
 # printing to console
-print("Quotes Information Added:")
+print("Quotes information added to TuGo slide:")
 print_table(tugo_quotes)
 
 # Setting info on Tugo slide
@@ -213,6 +217,8 @@ d_para = tugo_dates_text_frame.paragraphs[0]
 d_run = d_para.add_run()
 d_text = client_dict["trip_start"] + " - " + client_dict["end"]
 set_text(d_run, d_text, FONT, Pt(9), MSO_THEME_COLOR.ACCENT_2)
+
+print("\nAdding header information to TuGo slide:")
 
 # setting number of segurados
 tugo_insured_text_frame = tugo_info_header.cell(0,3).text_frame
@@ -231,15 +237,21 @@ print_table(tugo_info_header)
 
 # Saving Presentation
 
+savedir = 'quoted_presentations'
+savefile = f'{client_dict["full_name"].replace(' ', '-')}.pptx'
+
+print("\nSaving presentation...")
+print(f"Saved to '{savefile}' in {savedir} folder.")
+
 os.chdir('..')
 
-if 'quoted_presentations' not in os.listdir():
-    os.mkdir('quoted_presentations')
+if savedir not in os.listdir():
+    os.mkdir(savedir)
 
 os.chdir('quoted_presentations')
 
 # saving as pptx
-prs.save(f'{client_dict["full_name"].replace(' ', '-')}.pptx')
+prs.save(savefile)
 # prs.save(f'../quoted_pptx/{client_dict["full_name"]}.pptx')
 
 
